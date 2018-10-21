@@ -1,37 +1,55 @@
 <html>
   <head>
-    <title>Best News Ever!</title>
+    <title>Best Pizza Ever!</title>
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
   </head>
   <body>
     <header>
-      <h1>Best News Ever!>
-      <h3> we don't car if it's accuratee. We care it's the BEST!</h3>
+      <h1>Best Pizza Ever!<h1>
+      <h3> Come and get some, homie</h3>
     </header>
     <main>
+
       <section>
-        <h2>About Me</h2>
-        <p>We've spent years in the news industry, and have found that, readers prefer the best news, not the accurate news.</p>
+        <video width="540" height="320" controls>
+          <source src="G:\UDEMY COURSE\The Complete Front-End Web Development Course!\3. Advanced HTML Concepts\1. Images.mp4" type="video/mp4">
+        </video>
       </section>
-      <section>
 
-        <article>
-          <a href="#"><h3>Dog Kidnaps clown</h3></a>
-          <p>In a shocking turn of events, a dog was kidnapped a clowd, and is demanding a helicopter and big mac</p>
-          </br>
-        </article>
+      <section id="contact-form">
+        <h2>Place Order</h2>
+        <!-- minimal akan ada 2 atribut yaitu method dan action dalam sebuah form -->
+        <form method="post" action="place-order.php">
+          <h4>Delivery</h4>
+          <input type="radio" name="deliveryMethod" value="delivery"/>Delivery <br/>
+          <input type="radio" name="deliveryMethod" value="pickup"/>Pickup <br/>
+          <!-- akan ada minimal 4 atribut dalam input (biasanya) -->
+          <h4>Address</h4>
+          <input name="address 1" placeholder="your address here" class="lg-input"/><br/>
+          <input name="address 2" placeholder="your second address here" class="lg-input"/><br/>
+          <input name="city" placeholder="city" class="sm-input" />
+          <input name="state" placeholder="state" class="sm-input" /><br/>
+          <input name="zip" placeholder="ZIP CODE" class="sm-input"/>
+          <br/>
+          <br/>
+          <h4>Size</h4>
+          <select name="size">
+            <option value="12">12" - $13.99</option>
+            <option value="16">16" - $16.99</option>
+            <option value="19">19" - $19.99</option>
+            <option value="72">72" - $72.99</option>
+          </select>
+          <h4>ingredients</h4>
+          <!-- pengguaan name kedepannya bisa untuk filter, sedangkan value berisi nilai yang unik -->
+          <input type="checkbox" name="ingredients" value="pepperoni"/> pepperoni <br/>
+          <input type="checkbox" name="ingredients" value="salami"/> salami <br/>
+          <input type="checkbox" name="ingredients" value="bacon"/> bacon <br/>
+          <input type="checkbox" name="ingredients" value="sausage"/> sausage <br/>
+          <input type="checkbox" name="ingredients" value="onion"/> onion <br/>
+          <input type="checkbox" name="ingredients " value="peppers"/> peppers <br/>
 
-        <article>
-          <a href="#"><h3>new study confirm chocolate is in space</h3></a>
-          <p>have you ever wondered what outer space taste like? new study confirms that it tastes like chocolate. without the calories</p>
-          </br></br>
-        </article>
-
-        <article>
-          <a href="#"><h3>html5 save the day</h3></a>
-          <p>since its introduction, there's been less dive soupS</p>
-          </br></br>
-        </article>
-
+          <button type="submit">Place Order</button>
+        </form>
       </section>
 
       <footer>
